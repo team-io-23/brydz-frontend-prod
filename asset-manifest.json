@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/brydz-frontend-prod/static/css/main.714cb228.css",
+    "main.js": "/brydz-frontend-prod/static/js/main.f8210ead.js",
+    "static/media/JS.gif": "/brydz-frontend-prod/static/media/JS.d749a1baead227c7b574.gif",
+    "static/media/KC.gif": "/brydz-frontend-prod/static/media/KC.454896ac2def124effbd.gif",
+    "static/media/KS.gif": "/brydz-frontend-prod/static/media/KS.4ad57c330b2d08622c91.gif",
+    "static/media/QH.gif": "/brydz-frontend-prod/static/media/QH.04c78a916a0b69e7573d.gif",
+    "static/media/QS.gif": "/brydz-frontend-prod/static/media/QS.3cc03c1c13d2f81c7695.gif",
+    "static/media/JC.gif": "/brydz-frontend-prod/static/media/JC.ca7327962155f0f8fc28.gif",
+    "static/media/KD.gif": "/brydz-frontend-prod/static/media/KD.7d3ac11fae1e5b059137.gif",
+    "static/media/KH.gif": "/brydz-frontend-prod/static/media/KH.015d38e8d389121f1535.gif",
+    "static/media/QC.gif": "/brydz-frontend-prod/static/media/QC.3977b68088e2febfdfbf.gif",
+    "static/media/QD.gif": "/brydz-frontend-prod/static/media/QD.e4920e208957930bc64b.gif",
+    "static/media/JH.gif": "/brydz-frontend-prod/static/media/JH.6db7ca8e93348fcedb1b.gif",
+    "static/media/JD.gif": "/brydz-frontend-prod/static/media/JD.196aa0f633f6513a2c24.gif",
+    "index.html": "/brydz-frontend-prod/index.html",
+    "main.714cb228.css.map": "/brydz-frontend-prod/static/css/main.714cb228.css.map",
+    "main.f8210ead.js.map": "/brydz-frontend-prod/static/js/main.f8210ead.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.714cb228.css",
+    "static/js/main.f8210ead.js"
+  ]
+}
