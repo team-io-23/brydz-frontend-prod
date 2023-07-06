@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "homepage": "https://team-io-23.github.io/brydz-frontend-prod/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.8",
@@ -15,6 +16,10 @@
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.1",
     "@types/react-router-dom": "^5.3.3",
+    "dotenv": "^16.3.1",
+    "gh-pages": "^5.0.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.11.0",
@@ -26,6 +31,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
