@@ -23,19 +23,17 @@ function App() {
   });
   return (
     <CssBaseline>
-      <ThemeProvider theme={theme}>
-        <BrowserRouter>
-          <Routes>
-            <Route path = "/"       element = {<StartPage/>}/>
-            <Route path = "*"       element = {<StartPage/>}/>
-            <Route path = "/mainMenu" element = {<MainMenu/>}/>
-            <Route path = "/room"   element = {<Room/>}/>
-            <Route path = "/waitingRoom"   element = {<WaitingRoom/>}/>
-            <Route path = "/bidding"   element = {<Bidding/>}/>
-            <Route path = "/link/:roomLink" element = {<StartPage/>}/>
-          </Routes>
-        </BrowserRouter>
-      </ThemeProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path = "/"       element = {<StartPage/>}/>
+          <Route path = "*"       element = {<StartPage/>}/>
+          <Route path = "/mainMenu" element = {<MainMenu/>}/>
+          <Route path = "/room"   element = {<Room/>}/>
+          <Route path = "/waitingRoom"   element = {<WaitingRoom/>}/>
+          <Route path = "/bidding"   element = {<Bidding/>}/>
+          <Route path = "/link/:roomLink" element = {<StartPage/>}/>
+        </Routes>
+      </BrowserRouter>
     </CssBaseline>
 
   );
