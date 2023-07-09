@@ -11,7 +11,7 @@ import Bidding from './Bidding/Bidding';
 import MainMenu from './MainMenu/MainMenu';
 
 function App() {
-  const theme =createTheme({
+  /*const theme =createTheme({
     palette: {
       primary: {
         main: '#C41E3A',
@@ -20,7 +20,7 @@ function App() {
         main: '#D22B2B',
       },
     },
-  });
+  });*/
   return (
     <CssBaseline>
       <BrowserRouter>
