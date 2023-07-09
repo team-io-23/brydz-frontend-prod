@@ -11,7 +11,7 @@ import Bidding from './Bidding/Bidding';
 import MainMenu from './MainMenu/MainMenu';
 
 function App() {
-  /*const theme =createTheme({
+  const theme =createTheme({
     palette: {
       primary: {
         main: '#C41E3A',
@@ -20,20 +20,22 @@ function App() {
         main: '#D22B2B',
       },
     },
-  });*/
+  });
   return (
     <CssBaseline>
-      <BrowserRouter>
-        <Routes>
-          <Route path = "/"       element = {<StartPage/>}/>
-          <Route path = "*"       element = {<StartPage/>}/>
-          <Route path = "/mainMenu" element = {<MainMenu/>}/>
-          <Route path = "/room"   element = {<Room/>}/>
-          <Route path = "/waitingRoom"   element = {<WaitingRoom/>}/>
-          <Route path = "/bidding"   element = {<Bidding/>}/>
-          <Route path = "/link/:roomLink" element = {<StartPage/>}/>
-        </Routes>
-      </BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <Routes>
+            <Route path = "/"       element = {<StartPage/>}/>
+            <Route path = "*"       element = {<StartPage/>}/>
+            <Route path = "/mainMenu" element = {<MainMenu/>}/>
+            <Route path = "/room"   element = {<Room/>}/>
+            <Route path = "/waitingRoom"   element = {<WaitingRoom/>}/>
+            <Route path = "/bidding"   element = {<Bidding/>}/>
+            <Route path = "/link/:roomLink" element = {<StartPage/>}/>
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
     </CssBaseline>
 
   );
