@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brydz-frontend-prod/static/css/main.714cb228.css",
-    "main.js": "/brydz-frontend-prod/static/js/main.26b64445.js",
+    "main.js": "/brydz-frontend-prod/static/js/main.81687001.js",
     "static/media/JS.gif": "/brydz-frontend-prod/static/media/JS.d749a1baead227c7b574.gif",
     "static/media/KC.gif": "/brydz-frontend-prod/static/media/KC.454896ac2def124effbd.gif",
     "static/media/KS.gif": "/brydz-frontend-prod/static/media/KS.4ad57c330b2d08622c91.gif",
@@ -16,10 +16,10 @@
     "static/media/JD.gif": "/brydz-frontend-prod/static/media/JD.196aa0f633f6513a2c24.gif",
     "index.html": "/brydz-frontend-prod/index.html",
     "main.714cb228.css.map": "/brydz-frontend-prod/static/css/main.714cb228.css.map",
-    "main.26b64445.js.map": "/brydz-frontend-prod/static/js/main.26b64445.js.map"
+    "main.81687001.js.map": "/brydz-frontend-prod/static/js/main.81687001.js.map"
   },
   "entrypoints": [
     "static/css/main.714cb228.css",
-    "static/js/main.26b64445.js"
+    "static/js/main.81687001.js"
   ]
 }
