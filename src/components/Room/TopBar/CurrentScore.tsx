@@ -4,7 +4,7 @@ import { socket } from "../../App";
 import { Score } from "../../../utils";
 
 const CurrentScore: React.FC<Score> = ({ teamOne, teamTwo }) => {
-    let players = localStorage.getItem(`players-${socket.id}`)!.split(",");
+    let players = JSON.parse(localStorage.getItem(`players-${socket.id}`)!);
     if (players.length !== 4) {
         players = ["Player 1", "Player 2", "Player 3", "Player 4"]; // TODO: testing purposes
     }
