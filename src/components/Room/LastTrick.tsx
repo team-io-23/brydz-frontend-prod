@@ -15,7 +15,7 @@ function LastTrick(props: LastTrickProps) {
         <div className="lastTrick">
             <div className="playingCards simpleCards">
                 {Array.from(props.lastTrick.cards).map(({ rank, suit, symbol }, index) => (
-                    <ul className={`played-space-small-${(index - seat + 5) % 4}`}> {/* TODO: czemu 5 xd */}
+                    <ul className={`played-space-small-${(index - seat + 4) % 4}`}> 
                         <li key={rank + suit + symbol}>
                             <a className={`card rank-${rank} ${suit} myAllCards`}>
                                 <span className="rank">{rank.toUpperCase()}</span>
