@@ -38,7 +38,7 @@ function BiddingHistory() {
                 </TableRow>
             )
         } 
-    // TODO - trzeci pas się nie wyśwtietla
+
     return (
         <div className="bidding-history-container">
             <TableContainer component={Paper}>
