@@ -37,7 +37,6 @@ function HandView({ player, position, hand }: HandViewProps) {
         let currentSuit = localStorage.getItem(`suit-${socket.id}`)!;
 
         if (!checkCorrectCard(hand.cards, cardSuit, currentSuit) || !canPlay) {
-            console.log("Illegal card! / Not your turn!");
             return;
         }
 

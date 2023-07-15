@@ -9,7 +9,6 @@ function NextPlayerIndicator() {
         next = "0";
     }
 
-    console.log("Next: " + next);
     return (
         <ArrowLeft className={`next-indicator-${next}`}/>
     )

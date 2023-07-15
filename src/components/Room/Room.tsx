@@ -27,11 +27,9 @@ function Room() {
     useEffect(() => {
         socket.emit("get-hands");
         socket.emit("get-dummy");
-        console.log("Getting hands");
     }, []);
 
     socket.on("trick-over", (results: Score, endedTrick: Trick) => {
-        // TODO: Clear table when trick is over.
         localStorage.setItem(`suit-${socket.id}`, ""); // Reset current suit
         setLastTrick(endedTrick);
 

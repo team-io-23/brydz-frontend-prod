@@ -31,11 +31,8 @@ function WaitingRoom() {
     });
 
     socket.on("started-game", (players: Array<string>) => {
-        console.log("Started game");
         setPlayersInRoom(players);
         let nickname = localStorage.getItem(`nickname-${socket.id}`)!;
-        console.log("nickname: " + nickname);
-        console.log("players: " + playersInRoom);
         localStorage.setItem(`players-${socket.id}`, JSON.stringify(playersInRoom));
         localStorage.setItem(`bid-turn-${socket.id}`, "0"); // TODO - randomize, 0 for testing purposes
         localStorage.setItem(`bid-history-${socket.id}`, JSON.stringify([[ZERO_BID]]));
@@ -49,17 +46,6 @@ function WaitingRoom() {
 
 
     function handleStart() {
-        console.log(playersInRoom);
-        /*if (playersInRoom.length !== 2) {
-            alert("You need 4 players to start a game");
-            return;
-        }
-
-        if (playersInRoom[0] != localStorage.getItem(`nickname-${socket.id}`)) {
-            alert("Only the host can start the game");
-            return;
-        }*/ // TODO - testing purposes. Remove comment later.
-
         socket.emit("start-game", localStorage.getItem(`room-${socket.id}`));
     }
 

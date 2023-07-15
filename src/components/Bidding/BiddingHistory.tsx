@@ -23,7 +23,6 @@ const headerCellStyles = {
 function BiddingHistory() {
     let bidHistory = JSON.parse(localStorage.getItem(`bid-history-${socket.id}`)!);
     let realBidHistory = bidHistory.slice(1, bidHistory.length);
-    console.log(bidHistory);
 
         function roundRow (round: Array<Bid>) {
             return (

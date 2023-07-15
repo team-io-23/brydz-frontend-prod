@@ -15,8 +15,6 @@ function StartPage() {
     const { roomLink } = useParams();
 
     const handleJoin = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        console.log(socket.id);
-        console.log("Setting nickname: " + nickname);
         localStorage.setItem(`nickname-${socket.id}`, nickname);
         socket.emit("entered", nickname);
         if (roomLink != undefined) {
