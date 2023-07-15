@@ -15,7 +15,6 @@ function MainMenu(){
         socket.emit("creating-room", "");
         socket.on("created-room", (room: string) => {
             localStorage.setItem(`room-${socket.id}`, room);
-            console.log("Created room: " + localStorage.getItem(`room-${socket.id}`));
             navigate("/waitingRoom");
         });
     } 

@@ -33,7 +33,6 @@ function Bidding () {
     }, []);
     
     useEffect(() => {
-        console.log("Bidders: " + bid.bidder + ' ' + prevBid.bidder)
         if (bid.bidder === prevBid.bidder) {
             // This is a fix to a weird bug where the bid is emitted once but received multiple times.
             return;
@@ -55,7 +54,6 @@ function Bidding () {
         localStorage.setItem(`bid-turn-${socket.id}`, ((bid.bidder + 1) % 4).toString());
         
         let bidHistory:Array<Array<Bid>> = JSON.parse(localStorage.getItem(`bid-history-${socket.id}`)!);
-        console.log(bidHistory);
 
         // New bidding round.
         if (bid.bidder == 0 || bidHistory.length == 1) { // TODO - 1 is because of the zero bid placeholder.
@@ -67,7 +65,6 @@ function Bidding () {
     }, [bid]);
 
     socket.on("bid-made", (newBid: Bid) => {
-        console.log("Bid value: " + newBid.value);
         setBid(newBid);
     });
 
@@ -89,7 +86,6 @@ function Bidding () {
         let bid_turn = localStorage.getItem(`bid-turn-${socket.id}`)!;
         let mySeat = localStorage.getItem(`seat-${socket.id}`)!;
         if (bid_turn !== mySeat) {
-            console.log("Not your turn!");
             return;
         }
 

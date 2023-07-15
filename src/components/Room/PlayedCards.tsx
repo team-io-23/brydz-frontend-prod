@@ -17,11 +17,7 @@ function PlayedCards() {
 
     function playCard(card: Card, index: number) {
         const seat = parseInt(localStorage.getItem(`seat-${socket.id}`)!);
-        console.log("seat: " + seat);
-        console.log("index: " + index);
         const playedByRelativePosition = (index - seat + 4) % 4;
-        console.log("relative position: " + playedByRelativePosition);
-
 
         const newPlayedCards = new Map(playedCards);
         newPlayedCards.set(playedByRelativePosition, card);
@@ -29,8 +25,6 @@ function PlayedCards() {
     }
 
     socket.on("card-played", (card: Card, currentSuit: string, playedBy: number) => {
-        console.log("Current suit: " + currentSuit);
-        console.log("Player number " + playedBy + " played card: " + card.rank + " of " + card.suit);
         localStorage.setItem(`suit-${socket.id}`, currentSuit);
         localStorage.setItem(`nextPlayer-${socket.id}`, ((playedBy + 1) % 4).toString());
         socket.emit("get-hands");

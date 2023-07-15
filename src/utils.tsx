@@ -43,11 +43,9 @@ export interface Score {
 // handles joining room
 export function joinRoom(roomNumber: number, navigate: (arg0: string) => void){
     socket.emit("joining-room", roomNumber);
-    console.log("trying to join no:" + roomNumber);
     socket.on("joined-room", (room: string) => {
         navigate("/waitingRoom");
         localStorage.setItem(`room-${socket.id}`, room);
-        console.log("Joined room: " + localStorage.getItem(`room-${socket.id}`));
         return;
     });
     socket.on("room-is-full", function (){
